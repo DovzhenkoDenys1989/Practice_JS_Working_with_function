@@ -34,3 +34,15 @@ const minValue = function(minVal1, minVal2){
  
 
 
+   
+// 3. Функция, которая определяет чётность числа.
+
+const num = 20;
+
+//if(num % 2 === 0){
+//console.log(num, "Четное");
+//}else{
+//console.log(num, "Нечетное");
+//}
+const numPosition = num % 2 === 0 ? "Четное" : "Нечетное";
+console.log(num, numPosition);
