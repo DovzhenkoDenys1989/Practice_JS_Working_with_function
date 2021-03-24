@@ -3,6 +3,12 @@
 
 const userInput1 = prompt("Enter number 1: ");
 const userInput2 = prompt("Enter number 2: ");
+/**
+ *  finds the maximum value
+ * @param {number} val1 
+ * @param {number} val2 
+ * @returns val1 || val2
+ */
 
 const maxValue = function(val1, val2){
   if (isNaN(val1 - val2)){
@@ -24,6 +30,12 @@ const maxValue = function(val1, val2){
 
 const minUserInput1 = prompt("Enter number 1: ");
 const minUserInput2 = prompt("Enter number 2: ");
+/**
+ * finds the minimum value
+ * @param {number} minVal1 
+ * @param {number} minVal2 
+ * @returns minVal1 || minVal2
+ */
 
 const minValue = function(minVal1, minVal2){
   if(isNaN(minVal1 - minVal2)){
@@ -42,7 +54,14 @@ const minValue = function(minVal1, minVal2){
 
 // 3. Функция, которая определяет чётность числа.
 
-const num = prompt("Enter number isEven: ");;
+
+const num = prompt("Enter number isEven: ");
+
+/**
+ * the function determines the parity of a number
+ * @param {number} num 
+ * @returns num
+ */
 const isEven = function(num){
 //if(num % 2 === 0){
 //console.log(num, "Четное");
@@ -61,6 +80,14 @@ isEven(num);
 const a = +prompt("Enter number a: ");
 const b = +prompt("Enter number b: ");
 const c = +prompt("Enter number c: ");
+
+/**
+ * quadratic function
+ * @param {number} a 
+ * @param {number} b 
+ * @param {number} c 
+ * @returns null || [number] || [number, number]
+ */
 
 const squareRoot = function(a, b, c){
   const d = b ** 2 - 4 * a * c;
