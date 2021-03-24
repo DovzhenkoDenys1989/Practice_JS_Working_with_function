@@ -42,7 +42,7 @@ const minValue = function(minVal1, minVal2){
 
 // 3. Функция, которая определяет чётность числа.
 
-const num = 21;
+const num = prompt("Enter number isEven: ");;
 const isEven = function(num){
 //if(num % 2 === 0){
 //console.log(num, "Четное");
@@ -53,3 +53,29 @@ const numPosition = num % 2 === 0 ? "Четное" : "Нечетное";
 console.log(num, numPosition);
 }
 isEven(num);
+
+
+
+//*4. Функция, которая решает квадратные уравнения
+
+const a = +prompt("Enter number a: ");
+const b = +prompt("Enter number b: ");
+const c = +prompt("Enter number c: ");
+
+const squareRoot = function(a, b, c){
+  const d = b ** 2 - 4 * a * c;
+  if(d < 0){
+    console.log("No roots")
+    return null;
+  }
+  if(d === 0){
+    const x = -b / (2 * a);
+    return [x];
+  }
+  if (d > 0){
+    const x1 = (-b + d ** (1/2)) / (2 * a);
+    const x2 = (-b - d ** (1/2)) / (2 * a);
+    return [x1, x2];
+  }
+}
+console.log(squareRoot(a, b, c));
