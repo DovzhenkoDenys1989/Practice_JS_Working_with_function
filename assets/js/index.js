@@ -54,13 +54,12 @@ const minValue = function(minVal1, minVal2){
 
 // 3. Функция, которая определяет чётность числа.
 
-
 const num = prompt("Enter number isEven: ");
 
 /**
  * the function determines the parity of a number
- * @param {number} num 
- * @returns num
+ * @param {number} num
+ * @returns {boolean}
  */
 const isEven = function(num){
 //if(num % 2 === 0){
@@ -70,6 +69,7 @@ const isEven = function(num){
 //}
 const numPosition = num % 2 === 0 ? "Четное" : "Нечетное";
 console.log(num, numPosition);
+return num % 2 === 0;
 }
 isEven(num);
 
